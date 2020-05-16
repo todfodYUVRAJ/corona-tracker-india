@@ -12,8 +12,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- Uncompressed jQuery -->
-    >
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -35,13 +33,12 @@
     <!-- My jQuery -->
     <script src="main.js"></script>
 
-    <!-- Chart.js (Working CDN) -->
+    <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
     <title>Covid-19 Tracker India</title>
   </head>
   <body>
-    <!-- Main Title and  Sub-heading -->
     <div class="container-fluid bg-light p-5 text-center my-3">
       <h1 class="">Covid-19 Tracker India</h1>
       <h5 class="text-muted">
@@ -50,34 +47,34 @@
       </h5>
     </div>
 
-    <!-- Total number of confirmed and all the other info -->
     <div class="container my-5">
       <div class="row text-center">
         <div class="col-3 text-warning">
           <h5>Confirmed</h5>
+          <p id="confirmed"></p>
         </div>
         <div class="col-3 text-info">
           <h5>Active</h5>
+          <p id="active"></p>
         </div>
         <div class="col-3 text-success">
           <h5>Recovered</h5>
+          <p id="recovered"></p>
         </div>
         <div class="col-3 text-danger">
           <h5>Deceased</h5>
+          <p id="deaths"></p>
         </div>
       </div>
     </div>
 
-    <!-- Quote -->
     <div class="container bg-light p-3 my-5 text-center">
       <h5 class="text-info">"Prevention is the Cure."</h5>
       <p class="text-muted">Stay Indoors Stay Safe.</p>
     </div>
 
-    <!-- Used by Chart.js -->
     <canvas id="myChart"></canvas>
 
-    <!-- Bottom Note -->
     <div class="container text-center my-5">
       <h6 class="text-info">
         *Click on the Confirmed/Recovered/Deaths buttons above to see the chart
@@ -85,7 +82,6 @@
       </h6>
     </div>
 
-    <!-- Footer -->
     <footer class="footer mt-5 py-3 bg-light">
       <div class="container text-center">
         <span class="text-muted"

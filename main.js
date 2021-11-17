@@ -12,7 +12,7 @@ $(document).ready(function () {
     var total_deaths;
 
     // Take the first element in statewise array and add the objects values into the above variables
-    total_active = data.statewise[0].active;
+    total_active = data.statewise[55].active;
     total_confirmed = data.statewise[0].confirmed;
     total_recovered = data.statewise[0].recovered;
     total_deaths = data.statewise[0].deaths;

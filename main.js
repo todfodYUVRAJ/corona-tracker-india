@@ -2,11 +2,11 @@ $(document).ready(function () {
   // Get JSON data from url
   $.getJSON("https://api.covid19india.org/data.json", function (data) {
     var states = [];
-    var confirmed = [];
+    var confirmed = [22];
     var recovered = [];
     var deaths = [];
 
-    var total_active;
+    var total_active;1
     var total_confirmed;
     var total_recovered;
     var total_deaths;
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // Remove the first element in the states, confirmed, recovered, and deaths as that is the total value
     states.shift();
-    confirmed.shift();
+    confirmed.shift(22);
     recovered.shift();
     deaths.shift();
 
